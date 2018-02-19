@@ -1,15 +1,24 @@
 {
-  "name": "socket",
+  "name": "adcdsocket",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node index.js"
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raymondchiu10/ADCDsocket.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raymondchiu10/ADCDsocket/issues"
+  },
+  "homepage": "https://github.com/raymondchiu10/ADCDsocket#readme",
   "dependencies": {
+    "express": "^4.16.2",
     "socket.io": "^2.0.4"
   }
 }

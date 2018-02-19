@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/raymondchiu10/ADCDsocket#readme",
   "dependencies": {
+    "bufferutil": "3.0.3",
     "express": "^4.16.2",
-    "socket.io": "^2.0.4"
+    "socket.io": "^2.0.4",
+    "utf-8-validate": "4.0.0",
+    "ws": "4.0.0"
   }
 }

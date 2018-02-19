@@ -6,6 +6,15 @@ var io = require("socket.io")(server);
 var names = [];
 var msgs = [];
 
+server.listen(port, (err)=>{
+    if(err){
+        console.log("Error: ", err);
+        return false
+    }
+    
+    console.log("Socket port is running");
+})
+
 io.on("connection", function(socket){
     console.log("user has connected");
     
@@ -28,12 +37,3 @@ io.on("connection", function(socket){
         console.log("user has disconnected");
     });
 });
-
-server.listen(port, (err)=>{
-    if(err){
-        console.log("Error: ", err);
-        return false
-    }
-    
-    console.log("Socket port is running");
-})
